@@ -1,0 +1,14 @@
+### Current Technology Usage
+
+#### Panel 1: Top 10 LanguageWorkedWith
+```sql
+SELECT 
+  LanguageWorkedWith, 
+  COUNT(*) as Count
+FROM 
+  m5_survey_data_technologies_normalised
+GROUP BY 
+  LanguageWorkedWith
+ORDER BY 
+  Count DESC
+LIMIT 10
